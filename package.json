@@ -1,7 +1,10 @@
 {
   "name": "insomnia-plugin-mfa-authenticator",
-  "version": "0.0.2",
-  "private": true,
+  "version": "0.0.1",
+  "main": "main.js",
+  "description": "Insomnia MFA Authenticator",
+  "author": "Kevin OH",
+  "license": "MIT",
   "insomnia": {
     "name": "mfa-authenticator",
     "description": "Authenticator generates two-factor authentication codes in Insomnia",
@@ -15,7 +18,10 @@
       "cli": "*"
     }
   },
-  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mukkka3/insomnia-plugin-mfa-code"
+  },
   "dependencies": {
     "node-2fa": "^2.0.1"
   }
