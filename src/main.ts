@@ -1,6 +1,6 @@
 const twofactor = require("node-2fa");
 
-module.exports.templateTags = [
+export const templateTags: TemplateTag[] = [
   {
     name: "MFA",
     displayName: "MFA Code",
@@ -13,8 +13,8 @@ module.exports.templateTags = [
         defaultValue: "YOUR_MFA_SECRET",
       },
     ],
-    async run(context, mfaSecret) {
-      return twofactor.generateToken(mfaSecret).token;
+    async run(_context: unknown, mfaSecret: string): Promise<string> {
+      return twofactor.generateToken(mfaSecret)?.token;
     },
   },
 ];
