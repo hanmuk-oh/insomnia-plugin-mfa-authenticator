@@ -3,7 +3,19 @@
   "version": "0.1.1",
   "main": "./dist/main.js",
   "description": "Insomnia MFA Authenticator",
-  "author": "Kevin OH",
+  "keywords": [
+    "insomnia",
+    "insomnia-plugin",
+    "mfa",
+    "mfa-authenticator",
+    "two-factor-authentication",
+    "2fa",
+    "security",
+    "node-2fa",
+    "plugin",
+    "authentication"
+  ],
+  "author": "Hanmuk OH",
   "license": "MIT",
   "files": [
     "dist/**/*"
