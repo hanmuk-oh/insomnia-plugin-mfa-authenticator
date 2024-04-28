@@ -28,4 +28,13 @@ Alternatively, you can link the value to an environment variable, allowing you t
 
 ---
 
+Patch Notes
+
+- Version 0.1.1
+  - Update dependencies
+  - Transitioned to TypeScript for improved code reliability.
+  - Added unit tests to ensure functionality across updates.
+
+---
+
 The flexibility is yours in how you choose to use it. Enjoy!.
