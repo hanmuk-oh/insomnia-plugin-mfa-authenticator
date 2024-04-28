@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "incremental": null,
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["ESNext"],
@@ -15,10 +16,10 @@
     "isolatedModules": true,
     "noEmit": false,
     "composite": true,
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "types": ["vitest/globals", "node"]
   },
-  "include": ["src", "vite.config.ts"],
-  "exclude": ["node_modules"]
+  "include": ["./src", "vite.config.ts"],
+  "exclude": ["./node_modules"]
 }

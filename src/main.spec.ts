@@ -1,7 +1,7 @@
 import { vi } from "vitest";
 
 import { generateToken } from "node-2fa";
-import { templateTags } from "./main";
+import { templateTags } from "../src/main";
 
 describe("MFA Code Generator", () => {
   beforeEach(() => {});

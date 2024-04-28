@@ -1,0 +1,31 @@
+name: Unit Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Read .nvmrc
+        id: nvm
+        run: echo "::set-output name=NODE_VERSION::$(cat .nvmrc)"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ steps.nvm.outputs.NODE_VERSION }}"
+
+      - name: Install PNPM
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run tests
+        run: pnpm run test

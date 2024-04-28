@@ -1,12 +1,16 @@
 {
   "name": "insomnia-plugin-mfa-authenticator",
   "version": "0.0.2",
-  "main": "main.js",
+  "main": "./dist/main.js",
   "description": "Insomnia MFA Authenticator",
   "author": "Kevin OH",
   "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "vitest",
+    "prepack": "find ./dist -type f \\( -name \"*.d.js\" -o -name \"*.spec.js\" \\) -delete",
     "build": "tsc --build"
   },
   "insomnia": {
