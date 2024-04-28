@@ -1,5 +1,7 @@
 This is an [Insomnia](https://insomnia.rest/) plugin that allows you to generate MFA codes using [node-2fa](https://www.npmjs.com/package/node-2fa) under the hood.
 
+[![https://nodei.co/npm/insomnia-plugin-mfa-authenticator.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/insomnia-plugin-mfa-authenticator.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/insomnia-plugin-mfa-authenticator)
+
 ## Installation
 
 You can install this plugin manually by searching for its name, or you can automatically install it by visiting [this link](https://insomnia.rest/plugins/insomnia-plugin-mfa-authenticator) and clicking the `Install Plugin` button. This action will open the Insomnia application and install the plugin for you.
